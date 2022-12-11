@@ -7,7 +7,12 @@
   <script>
     let firstName = "Irvin";
     let lastName = "Torterat";
+    const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday",
+      "Thursday", "Friday", "Saturday"];
+    let now = new Date();
+    let dayName = daysOfTheWeek[now.getDay()];
 
+    alert(`Hello, world! Happy ${dayName}.`);
     alert("hello, world!");
     console.log("This page contains a friendly greeting.");
     console.log(`Hello, I am ${firstName} ${lastName}`)
