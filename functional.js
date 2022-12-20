@@ -21,3 +21,9 @@ function functionalUrls(elements) {
   return elements.map((element) => urlify(element));
 }
 console.log(functionalUrls(states));
+
+function generateUrls(elements) {
+  return elements.map(
+    (element) => `https://www.example.com/${urlify(element)}`
+  );
+}
