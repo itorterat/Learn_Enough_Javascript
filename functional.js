@@ -49,3 +49,11 @@ function functionalSingles(elements) {
 }
 
 console.log(functionalSingles(states));
+
+function filterIncludesDakota(elements) {
+  return elements.filter((element) => element.includes("Dakota"));
+}
+
+function filterRegex(elements) {
+  return elements.filter((element) => element.split(/\s+/).length === 2);
+}
