@@ -99,3 +99,11 @@ function functionalLengths(elements) {
 }
 
 console.log(functionalLengths(states));
+
+function productOfElements(elements) {
+  return elements.reduce((total, n) => (total *= n));
+  // Not handling case of empty array: should use a default value to return, like 0
+  // return elements.reduce((total, n) => (total *= n), 0)
+}
+
+console.log(productOfElements(numbers));
