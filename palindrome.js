@@ -12,9 +12,13 @@ function Phrase(content) {
     return this.content.toUpperCase();
   };
 
+  this.processor = function (string) {
+    return string.toLowerCase();
+  };
+
   // Returns content processed for palindrome testing.
   this.processedContent = function processedContent() {
-    return this.content.toLowerCase();
+    return this.processor(this.content);
   };
 
   // Returns true if the phrase is a palindrome, false otherwise.
@@ -30,7 +34,7 @@ function TranslatedPhrase(content, translation) {
 
   // Returns translation processed for palindrome testing.
   this.processedContent = function processedContent() {
-    return this.translation.toLowerCase();
+    return this.processor(this.translation);
   };
 }
 
