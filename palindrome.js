@@ -1,3 +1,11 @@
+Array.prototype.last = function () {
+  return this[this.length - 1];
+};
+
+String.prototype.blank = function () {
+  return /^\s*$/.test(this);
+};
+
 // Adds `reverse` to all strings.
 String.prototype.reverse = function () {
   return Array.from(this).reverse().join("");
