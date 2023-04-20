@@ -6,9 +6,12 @@ let Phrase = require("itorterat-palindrome");
 
 let text = fs.readFileSync("phrases.txt", "utf-8");
 
+fs.writeFileSync("palindromes.txt", "");
+
 text.split("\n").forEach(function (line) {
   let phrase = new Phrase(line);
   if (phrase.palindrome()) {
     console.log("palindrome detected:", line);
+    fs.appendFileSync("palindromes.txt", line + "\n");
   }
 });
