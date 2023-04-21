@@ -4,6 +4,11 @@
 let urllib = require("urllib");
 let url = process.argv[2];
 
+if (!url) {
+  console.error("Usage: node wikp.js <wikipedia url>");
+  process.exit(1);
+}
+
 console.log(url);
 
 const jsdom = require("jsdom");
