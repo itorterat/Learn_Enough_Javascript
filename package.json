@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "itorterat-palindrome": "^0.2.0"
+    "itorterat-palindrome": "^0.2.0",
+    "jsdom": "^21.1.1",
+    "urllib": "^3.13.1"
   }
 }
